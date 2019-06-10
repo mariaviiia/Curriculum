@@ -1,0 +1,352 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: black;
+}
+#envelope_body {
+  width: 30vw;
+  height: 40vh;
+  position: relative;
+  box-shadow: 4px 4px 5px #37a9c0;
+  &:hover {
+    width: 40vw;
+    height: 50vh;
+    position: relative;
+    #front_1 {
+      transform: rotateX(20deg);
+      z-index: 2;
+    }
+    #front_2 {
+      transform: rotateY(20deg);
+      z-index: 2;
+    }
+    #front_3 {
+      transform: rotateY(20deg);
+      z-index: 2;
+    }
+    #front_4 {
+      transform: rotateX(20deg);
+      z-index: 2;
+    }
+  }
+  &.active {
+    width: 100vw;
+    height: 100vh;
+    #back {
+      height: 100vh;
+    }
+    #front_1 {
+      transform: rotateX(200deg);
+      z-index: 1;
+      &.hidden {
+        display: none;
+      }
+    }
+    #front_2 {
+      transform: rotateY(150deg);
+      z-index: 1;
+      &.hidden {
+        display: none;
+      }
+    }
+    #front_3 {
+      transform: rotateY(150deg);
+      z-index: 1;
+      &.hidden {
+        display: none;
+      }
+    }
+    #front_4 {
+      transform: rotateX(150deg);
+      z-index: 1;
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+}
+#front_2 {
+  position: absolute;
+  background-color: #a3dfeb;
+  border: 3px solid #d9f4f9;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
+  transform-origin: 100%;
+  transition-property: transform, z-index;
+  transition-duration: 2s;
+  transition-timing-function: ease, ease;
+}
+#front_3 {
+  position: absolute;
+  background-color: #a3dfeb;
+  border: 3px solid #d9f4f9;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  clip-path: polygon(50% 50%, 0 0, 0 100%);
+  transform-origin: 0%;
+  transition-property: transform, z-index;
+  transition-duration: 2s;
+  transition-timing-function: ease, ease;
+}
+#front_4 {
+  position: absolute;
+  background-color: #c7eff7;
+  border: 3px solid #e6fffa;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  clip-path: polygon(0% 100%, 50% 50%, 100% 100%);
+  transform-origin: 0 100%;
+  transition-property: transform, z-index;
+  transition-duration: 2s;
+  transition-timing-function: ease, ease;
+}
+#front_1 {
+  position: absolute;
+  background-color: #c7eff7;
+  border: 3px solid #e6fffa;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 0, 100% 0, 50% 50%, 0 0);
+  z-index: 3;
+  transform-origin: 50% 0;
+  transition-property: transform, z-index;
+  transition-duration: 2s;
+  transition-timing-function: ease, ease;
+}
+.fading {
+  text-align: center;
+  font-size: 55px;
+  color: #9be8f7;
+  text-shadow: 0.5px 0.5px 1px #1e6e7f;
+}
+
+.portfolio {
+  overflow: auto;
+}
+
+#back {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.bird {
+	background-image: url(bird.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+	
+	animation-name: fly-cycle;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+
+	&--one {
+		animation-duration: 1s;
+		animation-delay: -0.5s;		
+	}
+	
+	&--two {
+		animation-duration: 1s;
+		animation-delay: -0.75s;
+	}
+	
+	&--three {
+		animation-duration: 1.25s;
+		animation-delay: -0.25s;
+	}
+	
+	&--four {
+		animation-duration: 1.1s;
+		animation-delay: -0.5s;
+	}
+
+}
+
+.birds-container{
+  z-index: 0;
+	position: absolute;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes fly-cycle {
+  100% {
+  background-position: -900px 0;
+  } 
+}
+
+@keyframes fly-right-one {
+	
+	0% {
+		transform: scale(0.3) translateX(-10vw);
+	}
+	
+	10% {
+		transform: translateY(40vh) translateX(10vw) scale(0.4);
+	}
+	
+	20% {
+		transform: translateY(30vh) translateX(30vw) scale(0.5);
+	}
+	
+	30% {
+		transform: translateY(20vh) translateX(50vw) scale(0.6);
+	}
+	
+	40% {
+		transform: translateY(10vh) translateX(70vw) scale(0.6);
+	}
+	
+	50% {
+		transform: translateY(5vh) translateX(90vw) scale(0.6);
+	}
+	
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	
+	100% {
+		transform: translateY(-10vh) translateX(110vw) scale(0.6);
+	}
+	
+}
+
+@keyframes fly-right-two {
+	
+	0% {
+		transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+	}
+	
+	10% {
+		transform: translateY(0vh) translateX(10vw) scale(0.4);
+	}
+	
+	20% {
+		transform: translateY(-4vh) translateX(30vw) scale(0.6);
+	}
+	
+	30% {
+		transform: translateY(1vh) translateX(50vw) scale(0.45);
+	}
+	
+	40% {
+		transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+	}
+	
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.45);
+	}
+	
+	51% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+	
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+	
+}
+
+.bird-container {
+	position: absolute;
+	top: 20%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	
+	animation-name: fly-right-one;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+	&--one {
+		animation-duration: 15s;
+		animation-delay: 0;
+	}
+	
+	&--two {
+		animation-duration: 16s;
+		animation-delay: 1s;
+	}
+	
+	&--three {
+		animation-duration: 14.6s;
+		animation-delay: 9.5s;
+	}
+	
+	&--four {
+		animation-duration: 16s;
+		animation-delay: 10.25s;
+	}
+	
+}
+
+.intro {
+  background-color: white;
+  height: 100%;
+  justify-content: center;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navigationButton{
+  outline: none !important;
+  background-color: white !important;
+  margin: 50px !important;
+}
+
+.navigation{
+  transform: rotateX(180deg);
+  position: absolute;
+}
+
+.navigationContainer{
+	position: absolute;
+	overflow: hidden;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.logo{
+ background-image: url(LOGO.svg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 450px;
+}
+
+.scroller{
+  position: sticky;
+  outline: none !important;
+  background-color: white !important;
+  margin: 50px !important;
+}
+
+.scroll{
+  position: sticky;
+}
+
+.scrollContainer{
+  top: 0;
+	position: absolute;
+	overflow: hidden;
+  align-items: flex-end;
+  justify-content: flex-end;
+}

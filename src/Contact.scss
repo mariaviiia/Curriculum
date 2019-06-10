@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap');
+
+.contact {
+    height: 100vh;
+  }
+  
+.title {
+  font-size: 50px;
+  color: #A25DC4;
+  text-align: center;
+  font-family: 'Roboto Mono';
+  padding-top: 20px;
+}
+
+.titleContainer{
+  height: 15%;
+}
+
+.iconContainer{
+  height: 85%;
+}
+
+.iconEmail{
+  padding: 30px;
+  margin: 50px;
+  text-align: center;
+  font-size: 200px;
+  border-radius:10%;
+  color: white;
+  background: linear-gradient(#00E9B3 , #00D5FF)
+} 
+
+.iconLinked{
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+  font-size: 200px;
+  border-radius:10%;
+  color: white;
+  background: linear-gradient(#00D5FF ,#00E9B3)
+}

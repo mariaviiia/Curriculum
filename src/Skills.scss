@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+
+.skillSeccion{
+  background-color: white;
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 2px rgb(43, 43, 43);
+}
+
+.skillName{
+  font-family:'Ubuntu Mono';
+  font-weight: bold;
+  text-align: center;
+}
+.expansion{
+    height: 21vh;
+    width: 100%;
+    display: flex;
+    background-color: white !important;
+}
+
+.styles{
+  border-bottom: dashed 2px #00D5FF !important;
+}
+
+.stylesNone{
+  border-bottom: dashed 2px white !important;
+}
+
+.hidden{
+  height: 10vh;
+}
+
+.showDetails{
+ height: 40vh;
+}
+
+.showDetailsPanel3{
+  height: 45vh;
+}
+
+.expandedContainer{
+  height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.expansionPanel{
+  background-color: white;
+  border: dashed 2px #00D5FF;
+}
+
+.skillsIcon{
+  font-size: 70px;
+  text-align: center;
+  color: #00D5FF
+}
+
+
+* {box-sizing:border-box}
+
+.expansionDetails{
+  padding: 20px;
+}
+
+.containerSkills {
+  width: 100%; 
+}
+
+.skills {
+  text-align: right;
+  color: white;
+  font-family: monospace;
+}
+
+.html5 {width: 90%; background-color: #F779DA;}
+.react {width: 80%; background-color: #05EB78;}
+.angular {width: 65%; background-color: #FD994C;} 
+.css3 {width: 90%; background-color: #F779DA;}
+.sass {width: 90%; background-color: #00D5FF;}
+.bootstrap {width: 80%; background-color: #FF973A;}
+.js {width: 90%; background-color: #00D5FF;}
+.ionic {width: 50%; background-color: #E976B3;}
+.jquery {width: 65%; background-color: #B27BD7;}
+.photoshop {width: 80%; background-color: #00E288;}
+.illustrator {width: 90%; background-color: #E976B3;}
+.premiere {width: 80%; background-color: #00D5FF;}

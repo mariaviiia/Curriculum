@@ -1,0 +1,156 @@
+.portfolio {
+    height: 100vh;
+    background-color: white;
+  }
+
+.projectsContainer{
+  height: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.projects{
+  overflow: hidden;
+  height: 100%;
+  padding: 0;
+}
+
+.iconProjects{
+  font-size: 80px;
+  text-align: center;
+}
+
+.worlds{
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.freecodecamp{
+  border: 2px solid #00D5FF;
+  border-right: none;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  &:after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: -30%;
+    left: -80%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+  
+    background: rgba(0, 213, 255, 0.50);
+    background: linear-gradient(
+      to right,
+      rgba(0, 213, 255, 0.2) 0%,
+      rgba(0, 213, 255, 0.10) 77%,
+      rgba(0, 213, 255, 0.1) 92%,
+      rgba(0, 213, 255, 0.0) 100%
+    );
+  }
+}
+  
+  /* Hover state - trigger effect */
+  .projects:hover:after {
+    opacity: 1;
+    left: 150%;
+    transition-property: left, top, opacity;
+    transition-duration: 2s, 2s, 0.30s;
+    transition-timing-function: ease;
+  }
+  
+  /* Active state */
+  .projects:active:after {
+    opacity: 0;
+  }
+
+.worldsApart{
+  border: 2px solid #05EB78;
+  border-right: none;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  &:after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: -30%;
+    left: -80%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+  
+    background: rgba(0, 213, 255, 0.50);
+    background: linear-gradient(
+      to right,
+      rgba(5, 235, 120, 0.2) 0%,
+      rgba(5, 235, 120, 0.10) 77%,
+      rgba(5, 235, 120, 0.1) 92%,
+      rgba(5, 235, 120, 0.0) 100%
+    );
+  }
+}
+
+.codepen{
+  border: 2px solid #FD994C;
+  border-right: none;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+   &:after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: -30%;
+    left: -80%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+  
+    background: rgba(0, 213, 255, 0.50);
+    background: linear-gradient(
+      to right,
+      rgba(253, 153, 76, 0.2) 0%,
+      rgba(253, 153, 76, 0.10) 77%,
+      rgba(253, 153, 76, 0.1) 92%,
+      rgba(253, 153, 76, 0.0) 100%
+    );
+  }
+}
+
+.github{
+  border: 2px solid #F779DA;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  &:after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: -30%;
+    left: -80%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+  
+    background: rgba(0, 213, 255, 0.50);
+    background: linear-gradient(
+      to right,
+      rgba(247, 121, 218, 0.2) 0%,
+      rgba(247, 121, 218, 0.10) 77%,
+      rgba(247, 121, 218, 0.1) 92%,
+      rgba(247, 121, 218, 0.0) 100%
+    );
+  }
+}
+
+.certificate{
+  width: 560px;
+  margin: 10px;
+}
