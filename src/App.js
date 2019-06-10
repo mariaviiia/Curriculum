@@ -98,6 +98,7 @@ class App extends React.Component {
                         <div className='container-fluid d-flex w-100 h-100 p-0 navigationContainer'>
                           <Fab
                               className='navigationButton'
+                              onClick={this.scrollDown}
                             >
                               <NavigationIcon className="navigation" />
                             </Fab>
