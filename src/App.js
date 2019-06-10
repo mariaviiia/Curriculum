@@ -107,14 +107,14 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className='container-fluid d-flex w-100 p-0 scrollContainer'>
+              {/* <div className='container-fluid d-flex w-100 p-0 scrollContainer'>
               <Fab
                 className='scroller'
                 onClick={this.scrollDown}
               >
                 <NavigationIcon className="scroll" />
               </Fab>
-            </div>
+            </div> */}
               <Skills/>
               <Portfolio />
               <Contact />
