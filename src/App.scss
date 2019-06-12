@@ -152,10 +152,12 @@ body {
 
 .bird {
 	background-image: url(bird.svg);
-	background-size: auto 100%;
 	width: 88px;
 	height: 125px;
-	will-change: background-position;
+  will-change: background-position;
+  @media screen and (max-width: 600px){
+    background-size: auto 100%;
+  }
 	
 	animation-name: fly-cycle;
 	animation-timing-function: steps(10);
