@@ -16,7 +16,7 @@ class Contact extends React.Component {
     }
 
     linkedIn(){
-      window.open('https://www.linkedin.com/in/maria-ochoa-44196b138/')
+      window.open('https://www.linkedin.com/in/maria-isabel-ochoa-44196b138/')
     }
 
     render() {
