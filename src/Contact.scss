@@ -5,11 +5,13 @@
   }
   
 .title {
-  font-size: 50px;
   color: #A25DC4;
   text-align: center;
   font-family: 'Roboto Mono';
   padding-top: 20px;
+  @media screen and (min-width: 600px){
+    font-size: 50px;
+  }
 }
 
 .titleContainer{
@@ -27,7 +29,11 @@
   font-size: 200px;
   border-radius:10%;
   color: white;
-  background: linear-gradient(#00E9B3 , #00D5FF)
+  background: linear-gradient(#00E9B3 , #00D5FF);
+  @media screen and (max-width: 600px){
+    font-size: 120px !important;
+    padding: 10px !important;
+  }
 } 
 
 .iconLinked{
@@ -37,5 +43,9 @@
   font-size: 200px;
   border-radius:10%;
   color: white;
-  background: linear-gradient(#00D5FF ,#00E9B3)
+  background: linear-gradient(#00D5FF ,#00E9B3);
+  @media screen and (max-width: 600px){
+    font-size: 130px !important;
+    padding: 10px !important;
+  }
 }

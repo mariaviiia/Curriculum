@@ -14,7 +14,9 @@ body {
   overflow: hidden;
   background-color: white;
 }
+
 #envelope_body {
+  min-width: 300px;
   width: 30vw;
   height: 40vh;
   position: relative;
@@ -133,6 +135,9 @@ body {
   font-size: 55px;
   color: #9be8f7;
   text-shadow: 0.5px 0.5px 1px #1e6e7f;
+  @media screen and (max-width: 600px){
+    font-size: 40px !important;
+  }
 }
 
 .portfolio {
@@ -311,11 +316,18 @@ body {
   outline: none !important;
   background-color: white !important;
   margin: 50px !important;
+  @media screen and (max-width: 600px){
+  padding: 1px !important;
+  margin: 10px !important;
+  }
 }
 
 .navigation{
   transform: rotateX(180deg);
   position: absolute;
+  @media screen and (max-width: 600px){
+    font-size: 17px !important;
+  }
 }
 
 .navigationContainer{
@@ -326,11 +338,15 @@ body {
 }
 
 .logo{
- background-image: url(LOGO.svg);
- background-repeat: no-repeat;
- background-position: center;
- background-size: 450px;
-}
+    background-image: url(LOGO.svg);
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: center;
+  @media screen and (max-width: 600px){
+    background-size: 300px !important;
+  }
+  }
+
 
 // .scroller{
 //   position: sticky;

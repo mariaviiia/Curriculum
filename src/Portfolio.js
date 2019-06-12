@@ -75,8 +75,8 @@ class Portfolio extends React.Component {
             </Dialog>
             <div className="container h-100 w-100 projectsContainer">
               <div className="row card h-100 m-0 w-100">
-                <div className="col h-100 m-0 d-flex p-0">
-                  <div className='col-3 projects freecodecamp' onClick={this.handleClickOpen}>
+                <div className="col col-xs-12 h-100 m-0 d-flex p-0 portfolioContent">
+                  <div className='col-md-3 col-xs-12 projects freecodecamp' onClick={this.handleClickOpen}>
                     <div className='container h-100 m-0 p-0'>
                       <div className='row h-100 m-0 p-0 d-flex justify-content-center align-content-center'>
                         <FontAwesomeIcon icon={['fab', 'free-code-camp']} className='col d-flex iconProjects m-0 p-0 w-100' />
@@ -84,7 +84,7 @@ class Portfolio extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className='col-3 projects worldsApart' onClick={this.worldsApart}>
+                  <div className='col-md-3 col-xs-12 projects worldsApart' onClick={this.worldsApart}>
                     <div className='container h-100 m-0 p-0'>
                       <div className='row h-100 m-0 p-0 d-flex justify-content-center align-content-center'>
                         <img src={wa} className='col-auto d-flex m-0 p-0 w-100 worlds' />
@@ -92,7 +92,7 @@ class Portfolio extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className='col-3 projects codepen' onClick={this.codepen}>
+                  <div className='col-md-3 col-xs-12 projects codepen' onClick={this.codepen}>
                     <div className='container h-100 m-0 p-0'>
                       <div className='row h-100 m-0 p-0 d-flex justify-content-center align-content-center'>
                         <FontAwesomeIcon icon={['fab', 'codepen']} className='col d-flex iconProjects m-0 p-0 w-100' />
@@ -100,7 +100,7 @@ class Portfolio extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className='col-3 projects github' onClick={this.gitHub} >
+                  <div className='col-md-3 col-xs-12 w-100 projects github' onClick={this.gitHub} >
                     <div className='container h-100 m-0 p-0'>
                       <div className='row h-100 m-0 p-0 d-flex justify-content-center align-content-center'>
                         <FontAwesomeIcon icon={['fab', 'github']} className='col d-flex iconProjects m-0 p-0 w-100' />

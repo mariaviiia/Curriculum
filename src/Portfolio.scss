@@ -16,13 +16,41 @@
 }
 
 .iconProjects{
-  font-size: 80px;
   text-align: center;
+  font-size: 80px;
 }
 
 .worlds{
   width: 80px !important;
   height: 80px !important;
+}
+@media screen and (max-width: 600px){
+  .portfolioContent{
+    display: block !important;
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 600px){
+   .freecodecamp{
+     height: 19.7vh;
+     border-bottom: none !important;
+     border-right: 2px solid #00D5FF !important;
+   }
+   .codepen{
+    height: 19.7vh;
+    border-bottom: none !important;
+    border-right: 2px solid #FD994C !important;
+   }
+   .github{
+    height: 19.7vh;
+    border-right: 2px solid #F779DA !important;
+   }
+   .worldsApart{
+    height: 19.7vh;
+    border-bottom: none !important;
+    border-right: 2px solid #05EB78 !important;
+   }
 }
 
 .freecodecamp{
