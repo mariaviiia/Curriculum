@@ -24,7 +24,7 @@
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-router-link": "^2.0.2",
-    "react-scripts": "3.0.1",
+    "react-scripts": "3.4.4",
     "react-scroll-effects": "^1.0.13"
   },
   "scripts": {
